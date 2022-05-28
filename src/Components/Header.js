@@ -5,7 +5,7 @@ import Buscador from './Buscador';
 
 import "../css/index.css"
 
-function Header() {
+function Header(props) {
     return (
         <>
             <nav className='navbar navbar-expand bg-dark navbar-dark'>
@@ -21,10 +21,15 @@ function Header() {
                         <div className='navbar-nav'>
                             <Link className='nav-link' to="/">Home</Link>
                             <Link className='nav-link' to="/listado">Listado</Link>
+                            <Link className='nav-link' to="/favoritos">
+                                Favoritos {props.favorites.length > 0 && <>({props.favorites.length})</> }
+                            </Link>
                         </div>
                 </div>                    
                 </div>
-                <Buscador className= "col-2"/>
+                <div className='container-fluid justify-content-end'>
+                    <Buscador />
+                </div>
             </nav> 
         </>
     )

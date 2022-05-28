@@ -67,7 +67,7 @@ function Login(){
                     <span>Contraseña:</span>
                     <input type="password" className="form-control" name="password"/>
                 </label>
-                <button className = "btn btn-success col-3" type="submit">Ingresar</button>
+                <button className = "btn btn-success col-1" type="submit">Ingresar</button>
             </form>
         </div>
        </>

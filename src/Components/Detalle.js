@@ -32,7 +32,7 @@ function Detalle() {
             { !token && <Navigate to="/" />}
             { !movie && <p>Cargando película...</p>}
             { movie && 
-                <>
+                <div className="container-fluid row">
                     <h2>Titulo: {movie.title}</h2>
                     <div className="row">
                         <div className="col-4">
@@ -48,7 +48,7 @@ function Detalle() {
                             </ul>
                         </div>
                     </div>
-                </>
+                </div>
             }
         </>
     )

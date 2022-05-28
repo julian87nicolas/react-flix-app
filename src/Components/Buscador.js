@@ -22,7 +22,7 @@ function Buscador () {
 
     return (
         <form className="d-flex" role="search" onSubmit={submitHandler}>
-                <input className="form-control me-2" type="search" name="keyword" placeholder="Escribe una palabra clave..."/>
+                <input className="form-control me-1" type="search" name="keyword" placeholder="Escribe una palabra clave..."/>
                 <button className = "btn btn-outline-secondary" type="submit">Buscar</button>
         </form>
     )

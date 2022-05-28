@@ -36,9 +36,9 @@ function Resultados () {
     return (
         <>
         { !token && <Navigate to="/" /> }
+        <div className="row container-fluid">
         <h2>Buscaste: <em>{keyword}</em></h2>
         {moviesResults.length === 0 && <h3>No hay resultados</h3>}
-        <div className="row container-fluid">
         {/* Estructura base */}        
         {
             moviesResults.map((oneMovie, idx) => {
