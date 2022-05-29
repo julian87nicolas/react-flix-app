@@ -43,7 +43,7 @@ function Resultados () {
         {
             moviesResults.map((oneMovie, idx) => {
                 return (
-                        <div className="col-4" key={idx}>
+                        <div className="col-sm-4 col-12" key={idx}>
                             <div className="card m-0.5">
                                 <img src= { "https://image.tmdb.org/t/p/w500/" + oneMovie.poster_path} className="card-img-top" alt="..." />
                                 <div className="card-body">

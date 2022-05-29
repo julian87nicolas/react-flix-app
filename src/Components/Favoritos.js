@@ -15,7 +15,7 @@ function Favoritos (props) {
         {   
             props.favorites.map((oneMovie, idx) => {
                 return (
-                        <div className="col-3" key={idx}>
+                        <div className="col-sm-3 col-12" key={idx}>
                             <div className="card m-0.5 mt-1">
                                 <img src= { oneMovie.imgURL } className="card-img-top" alt="..."/>
                                 <h5 className="card-title">{ oneMovie.title }</h5>

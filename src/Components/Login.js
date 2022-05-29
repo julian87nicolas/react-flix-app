@@ -58,16 +58,16 @@ function Login(){
         <div className="row g-3">
             <form onSubmit={submitHandler} className="d-flex flex-column justify-content-center align-items-center">
                 <h2>Formulario de Login</h2>
-                <label className="col-3">
+                <label className="col-l-3 col-md-3 col-sm-4 col-6">
                     <span>Correo electronico: </span>
                     <br />
                     <input type="text" className="form-control" name="email"/>
                 </label>
-                <label className="col-3">
+                <label className="col-md-3 col-sm-4 col-6">
                     <span>Contraseña:</span>
                     <input type="password" className="form-control" name="password"/>
                 </label>
-                <button className = "btn btn-success col-1" type="submit">Ingresar</button>
+                <button className = "btn btn-success col-md-2 col-sm-2 col-5" type="submit">Ingresar</button>
             </form>
         </div>
        </>

@@ -30,8 +30,8 @@ function Listado(props){
         {
             moviesList.map((oneMovie, idx) => {
                 return (
-                        <div className="col-3" key={idx}>
-                            <div className="card m-0.5 mt-1">
+                        <div className="col-sm-3 col-12" key={idx}>
+                            <div className="card m-sm-0.5 m-0 mt-1">
                                 <img src= { "https://image.tmdb.org/t/p/w500/" + oneMovie.poster_path} className="card-img-top" alt="..." />
                                 <button className='favorite-btn'
                                     onClick={props.addOrRemoveFromFavs}
