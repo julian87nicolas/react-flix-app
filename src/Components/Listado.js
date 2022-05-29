@@ -25,7 +25,7 @@ function Listado(props){
         <>
         { !token && <Navigate to="/" /> }
         
-        <div className="container-fluid row">
+        <div className="container-fluid d-flex row m-0 p-0">
         {/* Estructura base */}        
         {
             moviesList.map((oneMovie, idx) => {

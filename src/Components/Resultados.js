@@ -36,7 +36,7 @@ function Resultados () {
     return (
         <>
         { !token && <Navigate to="/" /> }
-        <div className="row container-fluid">
+        <div className="container-fluid row m-0 p-0">
         <h2>Buscaste: <em>{keyword}</em></h2>
         {moviesResults.length === 0 && <h3>No hay resultados</h3>}
         {/* Estructura base */}        

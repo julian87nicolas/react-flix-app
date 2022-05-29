@@ -9,7 +9,7 @@ function Favoritos (props) {
         <>
 
         { !token && <Navigate to="/" /> }
-        <div className="container-fluid row">
+        <div className="container-fluid row m-0 p-0">
         <h2>Favoritos: </h2>
         { !props.favorites.length && <div className="col-12 text-danger">No tienes favoritos</div>}        
         {   
